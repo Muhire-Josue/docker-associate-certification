@@ -3,4 +3,4 @@ RUN apt-get update
 RUN apt-get install -y apache2
 COPY ./index.html /var/www/html/index.html
 EXPOSE 80
-CMD [ "httpd", "-D", "FOREGROUND" ]
+CMD ["apache2ctl", "-D", "FOREGROUND"]
