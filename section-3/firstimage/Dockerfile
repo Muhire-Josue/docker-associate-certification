@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:alpine
 RUN yum -y update
 RUN yum install -y httpd
 COPY ./index.html /var/www/html/index.html
